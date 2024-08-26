@@ -23,7 +23,7 @@ Route::middleware([
 ])->group(function () {
 
     Route::prefix('dashboard')->group(function () {
-
+        Route::get('/', [App\Http\Controllers\DashboardHomeController::class, 'index'])->name('dashboard');
         // middleware to give access only for admin
         Route::middleware([
             'validateRole:Admin'
