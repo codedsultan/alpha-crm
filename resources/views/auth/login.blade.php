@@ -54,7 +54,7 @@
             </div>
             <div class="text-center pt-10">
                 <span class="text-sm text-gray-600">Don't have an account?</span>
-                <a href="{{ route('register') }}" class="text-sm text-pink-500 hover:text-pink-600">Create an Account</a>
+                <a href="{{ route('register') }}" class="text-sm text-blue-500 hover:text-blue-600">Create an Account</a>
             </div>
         </form>
     </x-authentication-card>

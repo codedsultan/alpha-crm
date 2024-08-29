@@ -23,7 +23,7 @@ class="relative bg-cover bg-center bg-no-repeat " style="background-image: url({
   <div class="max-w-xl text-left ltr:sm:text-left rtl:sm:text-right">
     <h1 class="text-3xl font-extrabold sm:text-5xl text-neutral-700">
       Find Your Perfect Appointments Experience at
-      <strong class="block font-extrabold text-pink-500">
+      <strong class="block font-extrabold text-blue-500">
       X Appointments      </strong>
     </h1>
 
@@ -34,12 +34,12 @@ class="relative bg-cover bg-center bg-no-repeat " style="background-image: url({
     <div class="mt-8 flex flex-wrap gap-4 text-center">
       <a
         href="{{route('services')}}"
-        class="block w-full rounded bg-pink-500 px-12 py-3 text-lg font-medium text-white shadow hover:bg-pink-700 focus:outline-none focus:ring active:bg-pink-500 sm:w-auto"
+        class="block w-full rounded bg-blue-500 px-12 py-3 text-lg font-medium text-white shadow hover:bg-blue-700 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
       >
 Book Now      </a>
 <a
           href="{{route('services')}}"
-          class="block w-full rounded bg-white px-12 py-3 text-lg font-medium text-pink-500 shadow hover:text-pink-600 focus:outline-none focus:ring-offset-pink-400 active:text-pink-500 sm:w-auto"
+          class="block w-full rounded bg-white px-12 py-3 text-lg font-medium text-blue-500 shadow hover:text-blue-600 focus:outline-none focus:ring-offset-pink-400 active:text-blue-500 sm:w-auto"
         >
           Browse Services
         </a>
@@ -52,28 +52,28 @@ Book Now      </a>
 </section>
 
         {{-- <img class="w-full bg-cover" src="{{ asset('images\Salon2.jpg') }}" alt="Banner image"> --}}
-        {{-- <div class="absolute right-1 top-5 font-black text-pink-600 text-7xl">30% OFF <br>THIS SEASON</div> --}}
+        {{-- <div class="absolute right-1 top-5 font-black text-blue-600 text-7xl">30% OFF <br>THIS SEASON</div> --}}
  <div>
-    <div class="text-center text-4xl font-semibold text-pink-500 m-2 mt-5">Categories</div>
+    <div class="text-center text-4xl font-semibold text-blue-500 m-2 mt-5">Categories</div>
 
     <div class="container flex gap-10 p-10 pt-3 justify-center mx-auto">
       <a href="#" class="text-center gap-2 duration-300 hover:scale-105">
           <img class="w-60 rounded-xl" src="{{ asset('images/hair.jpg')}}" alt="">
-          <span class="text-pink-500 text-2xl">Hair</span>
+          <span class="text-blue-500 text-2xl">Hair</span>
       </a>
       <a href="#" class="text-center gap-2 duration-300 hover:scale-105">
         <img class="w-60 rounded-xl" src="{{ asset('images/nails.jpg')}}"  alt="">
-        <span class="text-pink-500 text-2xl">Nails</span>
+        <span class="text-blue-500 text-2xl">Nails</span>
 
       </a>
       <a href="#" class="text-center gap-2 duration-300 hover:scale-105">
         <img class="w-60 rounded-xl" src="{{ asset('images/skin.jpg')}}" alt="">
-        <span class="text-pink-500 text-2xl">Skin</span>
+        <span class="text-blue-500 text-2xl">Skin</span>
 
       </a>
       <a href="#" class="text-center gap-2 duration-300 hover:scale-105">
         <img class="w-60 rounded-xl" src="{{ asset('images/makeup.jpg')}}" alt="">
-        <span class="text-pink-500 text-2xl">Makeup</span>
+        <span class="text-blue-500 text-2xl">Makeup</span>
       </a>
     </div>
 
@@ -82,7 +82,7 @@ Book Now      </a>
     <section class="pt-5 bg-white">
       <div class="md:w-4/5 mx-auto">
         <div class="mx-auto text-center md:max-w-xl lg:max-w-3xl">
-          <h3 class="mb-6 text-3xl text-pink-500 font-bold">Popular Services</h3>
+          <h3 class="mb-6 text-3xl text-blue-500 font-bold">Popular Services</h3>
           <p class="mb-6 pb-2 text-gray-700 md:mb-12 md:pb-0">
             Services Popular among our customers.
           </p>
@@ -103,7 +103,7 @@ Book Now      </a>
 
       <div class="flex justify-end mx-auto pb-5 gap-3 md:w-3/4">
 
-        <a href="{{route('services')}}" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded">
+        <a href="{{route('services')}}" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
           View All Services
         </a>
       </div>
@@ -112,7 +112,7 @@ Book Now      </a>
         {{-- <x-button>View all services</x-button>   --}}
         {{-- <a
           href="#"
-          class="block w-full rounded bg-pink-500 px-12 py-3 text-lg font-medium text-white shadow hover:bg-pink-700 focus:outline-none focus:ring active:bg-pink-500 sm:w-auto"
+          class="block w-full rounded bg-blue-500 px-12 py-3 text-lg font-medium text-white shadow hover:bg-blue-700 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
         >
   Browse Services    </a> --}}
 
@@ -120,7 +120,7 @@ Book Now      </a>
 
 <section class=" w-3/4 p-3 mx-auto pt-5">
 <div>
-  <div class="text-center text-4xl font-semibold text-pink-500 m-2">Offers</div>
+  <div class="text-center text-4xl font-semibold text-blue-500 m-2">Offers</div>
 </div>
 <div class="flex gap-10 ">
     @if($deals->count() > 0)
@@ -131,7 +131,7 @@ Book Now      </a>
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{ $deal->name }}</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700 ">{{ $deal->description }}</p>
-                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-500 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 ">
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-pink-300 ">
                         View Offer
                         <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     </a>
@@ -149,7 +149,7 @@ Book Now      </a>
     {{-- Gallery --}}
     <section class="pt-5 pb-5">
         <div class="mx-auto text-center md:max-w-xl lg:max-w-3xl">
-          <h3 class="text-3xl text-pink-500 font-bold">Gallery</h3>
+          <h3 class="text-3xl text-blue-500 font-bold">Gallery</h3>
         </div>
         <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
           <div class="-m-1 flex flex-wrap md:-m-2">
@@ -208,7 +208,7 @@ Book Now      </a>
     <section class="bg-white pt-5">
       <div class="md:w-3/4 mx-auto">
         <div class="mx-auto text-center md:max-w-xl lg:max-w-3xl">
-          <h3 class="mb-6 text-3xl text-pink-500 font-bold">Testimonials</h3>
+          <h3 class="mb-6 text-3xl text-blue-500 font-bold">Testimonials</h3>
           <p class="mb-6 pb-2 text-gray-700 md:mb-12 md:pb-0">
             Here are the testimonials from our customers who have visited our salon.
           </p>
@@ -349,7 +349,7 @@ Book Now      </a>
 
     <section class="mb-12" id="offer-banner">
 
-      <div class="bg-pink-600 alert alert-dismissible fade show fixed bottom-0 right-0 left-0 z-[1030] w-full py-4 px-6 text-white md:flex justify-between items-center text-center md:text-left">
+      <div class="bg-blue-600 alert alert-dismissible fade show fixed bottom-0 right-0 left-0 z-[1030] w-full py-4 px-6 text-white md:flex justify-between items-center text-center md:text-left">
         <div class="mb-4 md:mb-0 flex items-center flex-wrap justify-center md:justify-start">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-4 h-4 mr-2">
             <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
@@ -370,7 +370,7 @@ Book Now      </a>
     </section>
     <!-- Footer container -->
 <footer
-class="bg-pink-500 text-center text-neutral-100 lg:text-left">
+class="bg-blue-500 text-center text-neutral-100 lg:text-left">
 <div
   class="flex items-center justify-center border-b-2 border-neutral-200 p-6 lg:justify-between">
   <div class="mr-12 hidden lg:block">
