@@ -26,7 +26,7 @@
                         </svg>
                     </div>
                     <input type="search" wire:model="search" id="default-search" name="search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Search Locations...">
-                    <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-pink-600 hover:bg-pink-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
+                    <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
                 </div>
             </div>
 
@@ -103,7 +103,7 @@
 
                 </x-slot>
             </x-dialog-modal>
-            <x-dialog-modal wire:model.defer="confirmingLocationAdd">
+            <x-dialog-modal wire:model="confirmingLocationAdd">
                 <x-slot name="title">
                     {{ isset($this->location->id) ? 'Edit Location' : 'Add Location' }}
                 </x-slot>
@@ -111,26 +111,26 @@
                 <x-slot name="content">
                     <div>
                         <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                        <input type="text" wire:model="name" id="name" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-pink-500 sm:text-sm">
+                        <input type="text" wire:model="location.name" id="name" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-pink-500 sm:text-sm">
                         @error('location.name') <span class="text-red-500">{{ $message }}</span>@enderror
                     </div>
 
                     <div>
                         <label for="address" class="block text-sm font-medium text-gray-700">Address</label>
-                        <textarea type="text" wire:model="address" id="address" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-pink-500 sm:text-sm"></textarea>
+                        <textarea type="text" wire:model="location.address" id="address" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-pink-500 sm:text-sm"></textarea>
                         @error('location.address') <span class="text-red-500">{{ $message }}</span>@enderror
                     </div>
 
                     <div>
                         <label for="telephone_number" class="block text-sm font-medium text-gray-700">Telephone Number</label>
-                        <input type="tel" wire:model="telephone_number" minlength="10" maxlength="10" id="name" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-pink-500 sm:text-sm">
+                        <input type="tel" wire:model="location.telephone_number" minlength="10" maxlength="10" id="name" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-pink-500 sm:text-sm">
                         @error('location.telephone_number') <span class="text-red-500">{{ $message }}</span>@enderror
                     </div>
 
                     <div>
                         <label for="status" class="block text-sm font-medium text-gray-700">Is Operating</label>
 
-                        <input type="checkbox" wire:model="status" id="status"  class="block mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-pink-500 sm:text-sm">
+                        <input type="checkbox" wire:model="location.status" id="status"  class="block mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-pink-500 sm:text-sm">
 
                         @error('location.status') <span class="text-red-500">{{ $message }}</span>@enderror
                     </div>

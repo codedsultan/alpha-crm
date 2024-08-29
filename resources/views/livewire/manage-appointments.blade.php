@@ -40,7 +40,7 @@
                             </svg>
                         </div>
                         <input type="search" wire:model="search" id="default-search" name="search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Search Appointments...">
-                        <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
+                        <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
                     </div>
                 </div>
 
@@ -158,7 +158,7 @@
 {{--                <x-slot name="content">--}}
 {{--                    <div>--}}
 {{--                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>--}}
-{{--                        <input type="text" wire:model="appointment.name" id="name" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500 sm:text-sm">--}}
+{{--                        <input type="text" wire:model="appointment.name" id="name" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-pink-500 sm:text-sm">--}}
 {{--                        @error('appointment.name') <span class="text-red-500">{{ $message }}</span>@enderror--}}
 {{--                    </div>--}}
 

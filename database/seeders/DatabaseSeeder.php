@@ -54,7 +54,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::create([
             'name' => 'Admin',
             'email' => 'admin@x.com',
-            'password' => Hash::make('adminpassword'),
+            'password' => Hash::make('password'),
             'phone_number' => '1234569990',
             'role_id' => UserRolesEnum::Admin,
         ]);
@@ -62,7 +62,7 @@ class DatabaseSeeder extends Seeder
         // create mock customers
         \App\Models\User::create([
             'name' => 'Customer 1',
-            'email' => 'cust1@gmail.com',
+            'email' => 'customer@gmail.com',
             'password' => Hash::make('password'),
             'phone_number' => '1299567890',
             'role_id' => UserRolesEnum::Customer,
@@ -70,7 +70,7 @@ class DatabaseSeeder extends Seeder
 
         \App\Models\User::create([
             'name' => 'Customer 2',
-            'email' => 'cust2@gmail.com',
+            'email' => 'customer2@gmail.com',
             'password' => Hash::make('password'),
             'phone_number' => '1277567890',
             'role_id' => UserRolesEnum::Customer,
@@ -78,7 +78,7 @@ class DatabaseSeeder extends Seeder
 
         \App\Models\User::create([
             'name' => 'Customer 3',
-            'email' => 'cust3@gmail.com',
+            'email' => 'customer3@gmail.com',
             'password' => Hash::make('password'),
             'phone_number' => '1234998890',
             'role_id' => UserRolesEnum::Customer,
@@ -87,7 +87,7 @@ class DatabaseSeeder extends Seeder
         // this customer is suspeneded
         \App\Models\User::create([
             'name' => 'Customer 4',
-            'email' => 'cust4@gmail.com',
+            'email' => 'customer4@gmail.com',
             'password' => Hash::make('password'),
             'phone_number' => '2224262890',
             'role_id' => UserRolesEnum::Customer,
@@ -99,7 +99,7 @@ class DatabaseSeeder extends Seeder
         // create mock employees
         \App\Models\User::create([
             'name' => 'Employee 1',
-            'email' => 'emp1@x.com',
+            'email' => 'employee@company.com',
             'password' => Hash::make('password'),
             'phone_number' => '1644567890',
             'role_id' => UserRolesEnum::Employee,
@@ -107,7 +107,7 @@ class DatabaseSeeder extends Seeder
 
         \App\Models\User::create([
             'name' => 'Employee 2',
-            'email' => 'emp2@x.com',
+            'email' => 'employee2@company.com',
             'password' => Hash::make('password'),
             'phone_number' => '1234523890',
             'role_id' => UserRolesEnum::Employee,
@@ -116,7 +116,7 @@ class DatabaseSeeder extends Seeder
         // this Employee is suspeneded
         \App\Models\User::create([
             'name' => 'Employee 3',
-            'email' => 'emp3@gmail.com',
+            'email' => 'employee3@company.com',
             'password' => Hash::make('password'),
             'phone_number' => '0034567890',
             'role_id' => UserRolesEnum::Employee,
@@ -125,10 +125,10 @@ class DatabaseSeeder extends Seeder
 
         // Deals
         \App\Models\Deal::create([
-            'name' => 'Deal 1',
-            'description' => 'Deal 1 description',
-            'start_date' => '2023-07-16',
-            'end_date' => '2023-07-20',
+            'name' => 'Good Deal',
+            'description' => 'Good Deal description',
+            'start_date' => '2024-07-16',
+            'end_date' => '2025-07-20',
             'discount' => '10',
             'is_hidden' => '0',
         ]);

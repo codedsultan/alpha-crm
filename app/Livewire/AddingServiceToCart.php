@@ -124,7 +124,7 @@ class AddingServiceToCart extends Component
             $cart = request()->user()->cart()->create();
         }
 
-        dd($this->selectedDate,$this->selectedLocation,$this->selectedTimeSlot);
+        // dd($this->selectedDate,$this->selectedLocation,$this->selectedTimeSlot);
         // check if the user has a cart item with the same time in the cart
         $cartItem = $cart->services()
             ->where('date', $this->selectedDate)
@@ -153,7 +153,7 @@ class AddingServiceToCart extends Component
 
         // if there is no appointment with the same time
         // add the service to the cart
-        dd($this->selectedTimeSlot);
+        // dd($this->selectedTimeSlot);
         $timeSlot = TimeSlot::find($this->selectedTimeSlot);
 
         $cart->services()->attach($this->service->id, [
