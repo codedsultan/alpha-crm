@@ -34,14 +34,14 @@
                     <section aria-labelledby="information-heading" class="mt-2">
                         <h3 id="information-heading" class="sr-only">Product information</h3>
 
-                        <p class="text-2xl text-gray-900">LKR {{ number_format($service->price, 2, '.', ',') }}
+                        <p class="text-2xl text-gray-900">USD {{ number_format($service->price, 2, '.', ',') }}
                         </p>
 
 
                             @if (Auth::user()?->role_id == 1 || Auth::user()?->role_id == 2)
 
                             <a href="{{ route('manageservices') }}?search={{ $service->slug }}">
-                                <x-button class="px-5 py-2 text-white bg-pink-500 rounded-md hover:bg--600">
+                                <x-button class="px-5 py-2 text-white bg-blue-500 rounded-md hover:bg--600">
                                     Manage
                                 </x-button>
                             </a>
@@ -124,7 +124,7 @@
                                         </tr>
                                         <tr>
                                             <td class="border p-2">Revenue</td>
-                                            <td class="border p-2"> LKR {{ number_format($totalRevenueLastWeek, 2, '.', ',') }}</td>
+                                            <td class="border p-2"> USD {{ number_format($totalRevenueLastWeek, 2, '.', ',') }}</td>
                                             <td class="border p-2">
                                                 @if($percentageRevenueChangeLastWeek === 'N/A')
                                                     {{ $percentageRevenueChangeLastWeek }}
@@ -134,11 +134,11 @@
                                                     <span class="text-red-800"><span class="text-2xl">↓</span> {{ $percentageRevenueChangeLastWeek }} %</span>
                                                 @endif
                                             </td>
-                                            <td class="border p-2">LKR {{ number_format($totalRevenue, 2, '.', ',') }}</td>
+                                            <td class="border p-2">USD {{ number_format($totalRevenue, 2, '.', ',') }}</td>
                                         </tr>
                                         <tr>
                                             <td class="border p-2">Revenue (Last Month)</td>
-                                            <td class="border p-2">LKR {{ number_format($totalRevenueLastMonth, 2, '.', ',') }}</td>
+                                            <td class="border p-2">USD {{ number_format($totalRevenueLastMonth, 2, '.', ',') }}</td>
                                             <td class="border p-2">
                                                 @if($percentageRevenueChangeLastMonth === 'N/A')
                                                     {{ $percentageRevenueChangeLastMonth }}
@@ -314,8 +314,8 @@
 {{--                                                <label--}}
 {{--                                                    class="group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase  focus:outline-none sm:flex-1 cursor-pointer shadow-sm"--}}
 {{--                                                    x-bind:class="{--}}
-{{--                                                            'bg-pink-500 text-white ': selectedTimeSlot === '{{ $timeSlot->id }}',--}}
-{{--                                                            'bg-gray-50 text-gray-800 hover:bg-pink-100': selectedTimeSlot !== '{{ $timeSlot->id }}',--}}
+{{--                                                            'bg-blue-500 text-white ': selectedTimeSlot === '{{ $timeSlot->id }}',--}}
+{{--                                                            'bg-gray-50 text-gray-800 hover:bg-blue-100': selectedTimeSlot !== '{{ $timeSlot->id }}',--}}
 {{--                                                        }"--}}
 {{--                                                >--}}
 {{--                                                    <input type="radio" name="time-slot-choice"--}}

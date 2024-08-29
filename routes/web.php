@@ -15,7 +15,11 @@ Route::get('/', function () {
 //         return view('dashboard');
 //     })->name('dashboard');
 // });
+Route::get('/', [App\Http\Controllers\HomePageController::class, 'index'])->name('home');
+Route::get('/services', [App\Http\Controllers\ServicesController::class, 'index'])->name('services');
+Route::get('/services/{slug}', [App\Http\Controllers\ServicesController::class, 'show'])->name('view-service');
 
+Route::get('/deals', [App\Http\Controllers\DealController::class, 'index'])->name('deals');
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -78,7 +82,13 @@ Route::middleware([
             'validateRole:Customer'
         ])->group(function () {
 
-
+            Route::prefix('cart')->group( function () {
+                Route::get('/', [App\Http\Controllers\CartController::class, 'index'])->name('cart');
+                Route::post('/', [App\Http\Controllers\CartController::class, 'store'])->name('cart.store');
+                Route::delete('/item/{cart_service_id}', [App\Http\Controllers\CartController::class, 'removeItem'])->name('cart.remove-item');
+                Route::delete('/{id}', [App\Http\Controllers\CartController::class, 'destroy'])->name('cart.destroy');
+                Route::post('/checkout', [App\Http\Controllers\CartController::class, 'checkout'])->name('cart.checkout');
+            });
 
 
         });
