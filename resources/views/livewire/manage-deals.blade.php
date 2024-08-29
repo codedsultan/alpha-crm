@@ -26,7 +26,7 @@
                         </svg>
                     </div>
                     <input type="search" wire:model="search" id="default-search" name="search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Search Deals...">
-                    <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
+                    <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
                 </div>
             </div>
 
@@ -147,12 +147,12 @@
 
                             <div>
                                 <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                                <input type="text" wire:model="newDeal.name" id="name" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500 sm:text-sm">
+                                <input type="text" wire:model="newDeal.name" id="name" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-pink-500 sm:text-sm">
                                 @error('newDeal.name') <span class="text-red-500">{{ $message }}</span>@enderror
                             </div>
                             <div>
                                 <label for="description" class="block text-sm font-medium text-gray-700">Description</label>
-                                <input type="text" wire:model="newDeal.description" id="description" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500 sm:text-sm">
+                                <input type="text" wire:model="newDeal.description" id="description" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-pink-500 sm:text-sm">
                                 @error('newDeal.description') <span class="text-red-500">{{ $message }}</span>@enderror
                             </div>
 
@@ -160,12 +160,12 @@
 
                             <div>
                                 <label for="start_date" class="block text-sm font-medium text-gray-700">Date Start</label>
-                                <input type="date" wire:model="newDeal.start_date" id="start_date" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500 sm:text-sm">
+                                <input type="date" wire:model="newDeal.start_date" id="start_date" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-pink-500 sm:text-sm">
                                 @error('newDeal.start_date') <span class="text-red-500">{{ $message }}</span>@enderror
                             </div>
                             <div>
                                 <label for="end_date" class="block text-sm font-medium text-gray-700">Date End</label>
-                                <input type="date" wire:model="newDeal.end_date" id="end_date" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500 sm:text-sm">
+                                <input type="date" wire:model="newDeal.end_date" id="end_date" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-pink-500 sm:text-sm">
                                 @error('newDeal.end_date') <span class="text-red-500">{{ $message }}</span>@enderror
                             </div>
                         </div>
@@ -174,13 +174,13 @@
 
                         <div>
                             <label for="discount" class="block text-sm font-medium text-gray-700">Discount Percentage</label>
-                            <input type="number" wire:model="newDeal.discount" id="discount" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500 sm:text-sm">
+                            <input type="number" wire:model="newDeal.discount" id="discount" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-pink-500 sm:text-sm">
                             @error('newDeal.discount') <span class="text-red-500">{{ $message }}</span>@enderror
                         </div>
                         <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
                             <div>
                                 <label for="is_hidden" class="block text-sm font-medium text-gray-700">Is Hidden</label>
-                                <input type="checkbox" wire:model="newDeal.is_hidden" id="is_hidden" class="block w-5 h-5 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500 sm:text-sm">
+                                <input type="checkbox" wire:model="newDeal.is_hidden" id="is_hidden" class="block w-5 h-5 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-pink-500 sm:text-sm">
                                 @error('newDeal.is_hidden') <span class="text-red-500">{{ $message }}</span>@enderror
                             </div>
                             <div>
